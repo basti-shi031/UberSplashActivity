@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="point_color">#1FB6D8</color>
+    <color name="ringview_color">@color/point_color</color>
+
+</resources>

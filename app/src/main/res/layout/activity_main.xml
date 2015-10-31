@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <basti.coryphaei.com.ubersplashactivity.CustomVideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoview"/>
+
+    <include layout="@layout/user_login_register"
+        android:id="@+id/user"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/min_margin"
+        android:layout_marginRight="@dimen/min_margin"
+        android:layout_marginBottom="@dimen/bottom_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/user">
+        <basti.coryphaei.com.ubersplashactivity.UberView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uberview"
+            android:layout_centerInParent="true"/>
+        <basti.coryphaei.com.ubersplashactivity.RingView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ringview"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>
